@@ -1,12 +1,6 @@
 import streamlit as st 
 import pandas as pd
 import plotly.express as px
-try:
-    import plotly.express as px
-except ImportError:
-    import subprocess
-    subprocess.check_call(["pip", "install", "plotly"])
-    import plotly.express as px
   
 st.title("Discover Your Perfect Anime with Our Clustering Model")
 st.write("""
@@ -17,11 +11,6 @@ Let's explore the insights generated from this model!
 
 st.subheader("Top 10 Anime Names by Score")
 st.write("Here is a scatter graph showing the top 10 anime based on their scores.")
-# top_10 = mal_df.sort_values(by='Score', ascending=False).head(10)
 
-fig = px.scatter(top_10, x='Score', y='Name', title='Top 10 Anime Names by Score', size='Score', color='Name', 
-                 color_discrete_sequence=px.colors.qualitative.Pastel)
-fig.update_layout(width=800, height=500)
-fig.update_xaxes(dtick=0.1, range=[8, 9.5])
+st.image('chart1.png', caption='Anime Image', use_column_width=True)
 
-st.plotly_chart(fig)
