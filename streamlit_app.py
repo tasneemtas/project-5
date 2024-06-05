@@ -1,7 +1,13 @@
 import streamlit as st 
 import pandas as pd
 import plotly.express as px
-
+try:
+    import plotly.express as px
+except ImportError:
+    import subprocess
+    subprocess.check_call(["pip", "install", "plotly"])
+    import plotly.express as px
+  
 st.title("Discover Your Perfect Anime with Our Clustering Model")
 st.write("""
 ### Today, I have created the best model for predicting your anime preferences based on the ones you've already watched.
