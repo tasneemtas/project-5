@@ -39,3 +39,10 @@ The data highlights the most not recommended anime titles.
 "Guilty Crown" tops the list, followed by "Domestic na Kanojo" and "B-gata H-kei." Conversely, "Isekai Cheat Magician" and "Dead Mount Death Play" have fewer avoid recommendations. This indicates that "Guilty Crown" is generally seen unfavorably, while the others may have mixed reviews.
 """)
 
+st.subheader("Conclusion")
+
+st.write("""
+In conclusion, our clustering model provides valuable insights into anime preferences. 
+By analyzing your viewing history, it suggests anime titles that align with your tastes, enhancing your viewing experience. The top 10 anime by score, seasonal anime classification, and recommended/not recommended anime lists offer a comprehensive overview of popular and divisive titles. Whether you're seeking highly-rated classics or hidden gems, our model helps you discover your perfect anime.
+""")
+
