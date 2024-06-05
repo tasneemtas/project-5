@@ -42,7 +42,6 @@ The data highlights the most not recommended anime titles.
 st.subheader("Conclusion")
 
 st.write("""
-In conclusion, our clustering model provides valuable insights into anime preferences. 
-By analyzing your viewing history, it suggests anime titles that align with your tastes, enhancing your viewing experience. The top 10 anime by score, seasonal anime classification, and recommended/not recommended anime lists offer a comprehensive overview of popular and divisive titles. Whether you're seeking highly-rated classics or hidden gems, our model helps you discover your perfect anime.
+In conclusion, our clustering model provides valuable insights into anime preferences. By analyzing your viewing history, it suggests anime titles that align with your tastes, enhancing your viewing experience. The top 10 anime by score, seasonal anime , and recommended/not recommended anime lists offer a comprehensive overview of popular and divisive titles. Whether you're seeking highly-rated classics or hidden gems, our model helps you discover your perfect anime.
 """)
 
